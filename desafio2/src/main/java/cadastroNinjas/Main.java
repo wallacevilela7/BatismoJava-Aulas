@@ -13,7 +13,7 @@ public class Main {
         sc.nextLine();
 
         String[] array = new String[numMax];
-        int j = 0;
+        int insercoes = 0;
         do
         {
             System.out.println("\n===== Menu Ninja =====");
@@ -26,8 +26,7 @@ public class Main {
 
             switch (option) {
                 case 1:
-
-                    if(j == numMax){
+                    if(insercoes == numMax){
                         System.out.println("Lista totalmente preenchida");
                         System.out.println("Para verificar os ninjas cadastrados selecione a opcao (2) no menu");
                         break;
@@ -35,9 +34,9 @@ public class Main {
 
                     System.out.println("Digite o nome do ninja: ");
                     String nome = sc.nextLine();
-                    array[j] = nome;
+                    array[insercoes] = nome;
                     System.out.println(nome + " adicionado à lista de ninjas");
-                    j++;
+                    insercoes++;
                     break;
                 case 2:
                     if (array[0] == null) {
