@@ -1,6 +1,8 @@
 import entities.BolsaNinja;
 import entities.EquipamentoNinja;
 
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
         EquipamentoNinja kunaiPadrao = new EquipamentoNinja("Kunai padrao");
@@ -13,5 +15,13 @@ public class Main {
         bolsaNinja.addEquipamento(pergaminho);
 
         System.out.println(bolsaNinja);
+
+        List<String> list = new ArrayList<>();
+
+
+         //Queues - Filas
+        // a queue faz parte da familia das linked lists - listas ligadas
+        Queue<String> myQueue = new LinkedList<>();
+
     }
 }
