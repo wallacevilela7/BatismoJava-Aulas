@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-
+    /*
         //Array
         String[] array = new String[3];
 
@@ -37,7 +37,19 @@ public class Main {
         queue.add("Tomirama");
 
         System.out.println("Na fila apos atualizar: " + queue);
+*/
+        //Aula LinkedList
 
-        
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.add("Naruto");
+        linkedList.add("Sasuke");
+        linkedList.add("Sakura");
+
+        System.out.println(linkedList);
+
+        linkedList.add(1,"Kakashi");
+        linkedList.remove(2);
+
+        System.out.println(linkedList);
     }
 }
